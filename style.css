@@ -1,0 +1,222 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif
+}
+
+body {
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: aqua;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 700px;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 35px rgba(0, 0, 0, 0.1);
+}
+
+.container .left-site {
+    min-width: 350px;
+    position: relative;
+    background-color: #003147;
+    padding: 40px;
+}
+.profileText {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+.profileText .imgBx {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileText .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation:spin .4s linear infinite;
+}
+
+.profileText .imgBx img:hover{
+    transform: scale(1.4);
+}
+
+.contact {
+    padding-top: 40px;
+}
+.title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+ul li .text {
+    margin-left: 7px;
+}
+.contact ul {
+    position: relative;
+}
+.skills {
+    color: #fff;
+}
+
+.contact ul li {
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+}
+.contact ul li span {
+    color: #fff;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+}
+
+.skills {
+    margin-top: 40px;
+}
+
+.skills .code {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-lan img {
+    width: 50px;
+}
+
+.icon-lan {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Tooltip text */
+.icon-lan .tooltiptext {
+    visibility: hidden;
+    background-color: rgba(56, 107, 202, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    width: 100px;
+    top: 100%;
+    left: 50%;
+    margin-left: -50px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+.icon-lan:hover .tooltiptext {
+    visibility: visible;
+}
+
+.container .right-site {
+    height: 100%;
+    position: relative;
+    background-color: #003147;
+    padding: 40px;
+}
+
+.about {
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+#education {
+    display: none;
+    color: #fff;
+}
+
+.uni-name {
+    font-size: 1.4rem;
+}
+
+.time {
+    font-style: italic;
+    color: #8a8282;
+}
+
+.major {
+    font-size: 1.2rem;
+}
+
+#projects {
+    display: none;
+}
+#projects ul li {
+    color: #fff;
+    margin: 10px 0;
+}
+
+#projects a {
+    width: 100px;
+}
+
+.script {
+    color: rgb(227, 227, 86);
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+
+@media (max-width: 1000px){
+    .container {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .about {
+        margin-top: 0px;
+    }
+}
+
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+
+
+
