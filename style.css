@@ -25,6 +25,7 @@ ul {
 
 .container {
     position: relative;
+    border-radius: 15px;
     width: 100%;
     max-width: 1000px;
     min-height: 700px;
